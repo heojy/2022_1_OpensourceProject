@@ -16,9 +16,10 @@ void ledgersetMode() {
 	printf("\n현재 자산을 입력해주세요. \n");  //현재자산을 입력받는다.
 	scanf("%d", &balance);
 	if (balance == 0) {
-		printf("자산에 0원을 입력하여 종료됩니다.");
+		printf("자산에 0원을 입력하여 종료됩니다.\n");
 	}
 	else {
+		printf("\n자산 %d 원 입력되었습니다.\n", balance);
 		fprintf(fp, "\n잔액은 %d 원\n", balance);
 	}
 	fclose(fp);
